@@ -8,7 +8,7 @@
     </title>
     <meta
       name="description"
-      content="Tithi Kotasthane, iPhD student at IISER Thiruvananthapuram studying hypoxia signalling, metabolism and nutritional homeostasis in Drosophila melanogaster."
+      content="Investigating systemic oxygen and nutrient sensing across Drosophila development."
     />
     <meta name="theme-color" content="#181213" />
     <meta name="color-scheme" content="dark" />
@@ -486,31 +486,6 @@
         color: var(--on-dark-dim);
         font-size: clamp(1.05rem, 1rem + 0.32vw, 1.2rem);
       }
-      .hero-meta {
-        margin-top: clamp(2.25rem, 5vw, 3.25rem);
-        padding-top: 1.4rem;
-        border-top: 1px solid var(--rule-dark);
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 0.4rem 1.1rem;
-        font-family: var(--f-ui);
-        font-size: 0.83rem;
-        color: var(--on-dark-dim);
-      }
-      .hero-meta li {
-        display: flex;
-        align-items: center;
-        gap: 1.1rem;
-      }
-      .hero-meta li:not(:last-child)::after {
-        content: "";
-        width: 3px;
-        height: 3px;
-        border-radius: 50%;
-        background: currentColor;
-        opacity: 0.45;
-      }
 
       .scroll-cue {
         display: inline-flex;
@@ -831,6 +806,17 @@
           gap: 2.5rem;
         }
       }
+      .arch__aims li {
+        padding-top: 0.95rem;
+        border-top: 1px solid var(--rule-dark);
+        font-family: var(--f-ui);
+        font-size: 0.92rem;
+        line-height: 1.65;
+        color: var(--on-dark-dim);
+      }
+      .arch__aims em {
+        color: var(--on-dark);
+      }
       .arch h3 {
         font-family: var(--f-ui);
         font-size: 0.92rem;
@@ -840,25 +826,6 @@
         padding-bottom: 0.65rem;
         margin-bottom: 0.95rem;
         border-bottom: 1px solid var(--rule-dark);
-      }
-      .tick-list li {
-        position: relative;
-        padding-left: 1.05rem;
-        margin-bottom: 0.6rem;
-        font-family: var(--f-ui);
-        font-size: 0.875rem;
-        line-height: 1.55;
-        color: var(--on-dark-dim);
-      }
-      .tick-list li::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0.6em;
-        width: 4px;
-        height: 4px;
-        border-radius: 50%;
-        background: var(--accent);
       }
 
       /* ============================================================
@@ -970,12 +937,7 @@
           grid-template-columns: repeat(2, minmax(0, 1fr));
         }
       }
-      @media (min-width: 1000px) {
-        .card-grid {
-          grid-template-columns: repeat(3, minmax(0, 1fr));
-        }
-      }
-      .card {
+            .card {
         padding: 1.5rem;
         border: 1px solid var(--rule-dark);
         border-radius: 3px;
@@ -985,14 +947,6 @@
       .card:hover {
         border-color: rgba(244, 166, 191, 0.3);
         transform: translateY(-2px);
-      }
-      .card--wide {
-        grid-column: 1/-1;
-      }
-      @media (min-width: 1000px) {
-        .card--wide {
-          grid-column: span 2;
-        }
       }
       .card__head {
         padding-bottom: 0.65rem;
@@ -1292,7 +1246,7 @@
           <a href="#about">About</a>
           <a href="#research">Research</a>
           <a href="#journey">Journey</a>
-          <a href="#lab">Techniques</a>
+          <a href="#lab">Lab</a>
           <a href="#opportunities">Opportunities</a>
           <a href="#contact" class="nav-cta">Contact</a>
         </nav>
@@ -1334,7 +1288,7 @@
         <a href="#about">About</a>
         <a href="#research">Research</a>
         <a href="#journey">Journey</a>
-        <a href="#lab">Techniques</a>
+        <a href="#lab">Lab</a>
         <a href="#opportunities">Opportunities</a>
         <a href="#contact">Contact</a>
       </div>
@@ -1385,12 +1339,6 @@
             Investigating systemic oxygen and nutrient sensing across
             <em>Drosophila</em> development.
           </p>
-
-          <ul class="hero-meta">
-            <li>iPhD, IISER Thiruvananthapuram</li>
-            <li>DREAM Lab · Dr. Jishy Varghese</li>
-            <li><em>Drosophila melanogaster</em></li>
-          </ul>
 
           <a class="scroll-cue" href="#about">
             <span>Scroll</span>
@@ -1476,11 +1424,11 @@
                 <div class="stats">
                   <div>
                     <div class="stat-value">9.56</div>
-                    <span class="stat-label">IISER TVM · CGPA/10</span>
+                    <span class="stat-label">IISER TVM (CGPA/10)</span>
                   </div>
                   <div>
                     <div class="stat-value">9.08</div>
-                    <span class="stat-label">MSU Baroda · CGPA/10</span>
+                    <span class="stat-label">MSU Baroda (CGPA/10)</span>
                   </div>
                 </div>
               </div>
@@ -1560,7 +1508,7 @@
       <!-- ================= RESEARCH ================= -->
       <section class="band band--dark" id="research">
         <div class="wrap">
-          <p class="sec-tag">Current work</p>
+          <p class="sec-tag">Current research</p>
 
           <div class="research-head reveal">
             <h2 class="h2" style="color: #fff">
@@ -1598,7 +1546,7 @@
                 src="images/signaling-pathway.png"
                 width="1176"
                 height="794"
-                alt="Low nutrition and low oxygen stabilise Sima in the fat body, suppressing dILP secretion and insulin/TOR signalling, which slows growth and delays development."
+                alt="Hypoxia-nutrient crosstalk and Sima stabilization in Drosophila melanogaster"
                 loading="lazy"
                 decoding="async"
               />
@@ -1609,44 +1557,24 @@
           </figure>
 
           <div class="arch reveal">
-            <p class="arch__label">Experimental architecture</p>
-            <div class="arch__cols">
-              <div>
-                <h3>Tissue targeting</h3>
-                <ul class="tick-list">
-                  <li>Fat body-specific <em>sima</em> manipulation</li>
-                  <li>
-                    GAL4/UAS and <em>tub-GAL80<sup>ts</sup></em> conditional
-                    drivers
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h3>Adult assays</h3>
-                <ul class="tick-list">
-                  <li>Feeding assay (Orange G dye)</li>
-                  <li>Triglyceride (TAG) quantification</li>
-                  <li>Starvation survival kinetics</li>
-                  <li>Body weight and critical weight</li>
-                  <li>Locomotor activity (DAM system)</li>
-                </ul>
-              </div>
-              <div>
-                <h3>Larval pathway qPCRs</h3>
-                <ul class="tick-list">
-                  <li>
-                    Insulin pathway (<em>dilps</em>, <em>InR</em>,
-                    <em>4E-BP</em>)
-                  </li>
-                  <li>
-                    Ecdysone pathway (<em>phantom</em>, <em>spookier</em>)
-                  </li>
-                  <li>
-                    Hypoxia pathway (<em>sima</em>, <em>tgo</em>, <em>ldh</em>)
-                  </li>
-                </ul>
-              </div>
-            </div>
+            <p class="arch__label">Experimental Architecture</p>
+            <ul class="arch__cols arch__aims">
+              <li>
+                Investigating how the hypoxia pathway integrates nutritional and
+                metabolic stress signals and contributes to growth, survival and
+                developmental physiology in <em>Drosophila melanogaster</em>.
+              </li>
+              <li>
+                Examining hypoxia pathway regulation under starvation and hypoxia,
+                and its interaction with insulin and ecdysone signalling across
+                development and adulthood.
+              </li>
+              <li>
+                Using genetic manipulation of the hypoxia pathway in adult flies to
+                test whether its activity influences physiological responses and
+                survival under metabolic stress.
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -1687,59 +1615,45 @@
       <!-- ================= JOURNEY ================= -->
       <section class="band band--ivory" id="journey">
         <div class="wrap">
-          <p class="sec-tag">Background</p>
+          <p class="sec-tag">Journey</p>
 
           <div class="journey-head reveal">
             <h2 class="h2">Research journey</h2>
             <p class="dim">
-              Intellectual evolution toward organismal physiology, stress and
-              metabolism.
+              Intellectual evolution toward organismal physiology, stress &amp; metabolism.
             </p>
           </div>
 
           <ol class="timeline">
             <li class="tl-item reveal">
-              <span class="tl-when">2022–2023 · MS University of Baroda</span>
+              <span class="tl-when">2022–2023 · MS University of Baroda · Dr. Devashri Gajjar, Dr. Ankita Salunke</span>
+              <p class="tl-what">Summer research internships.</p>
+            </li>
+            <li class="tl-item reveal">
+              <span class="tl-when">May–July 2024 · IISER Pune · Dr. Girish Ratnaparkhi</span>
               <p class="tl-what">
-                Molecular biology, toxicology and antimicrobial susceptibility.
+                Studied the role of serine hydroxylases in <em>Drosophila</em> embryonic development.
               </p>
             </li>
             <li class="tl-item reveal">
-              <span class="tl-when"
-                >May–July 2024 · IISER Pune · Dr. Girish Ratnaparkhi</span
-              >
+              <span class="tl-when">June–August 2025 · IISER Thiruvananthapuram · Dr. Sabari Shankar Tirupati</span>
               <p class="tl-what">
-                <em>Drosophila</em> embryonic patterning and dorsoventral
-                development.
+                Translation - Transcription conflict regulation in <em>Bacillus subtilis</em>.
               </p>
             </li>
             <li class="tl-item reveal">
-              <span class="tl-when"
-                >June–August 2025 · IISER Thiruvananthapuram · Dr. Sabari
-                Shankar Tirupati</span
-              >
+              <span class="tl-when">August–September 2025 · IISER Thiruvananthapuram · Dr. Nisha N. Kannan</span>
               <p class="tl-what">
-                GreA transcription regulation in <em>Bacillus subtilis</em>.
-              </p>
-            </li>
-            <li class="tl-item reveal">
-              <span class="tl-when"
-                >August–September 2025 · IISER Thiruvananthapuram · Dr. Nisha N.
-                Kanan</span
-              >
-              <p class="tl-what">
-                <em>Drosophila</em> chronobiology and circadian nutrition.
+                Trained in <em>Drosophila</em> chronobiology, with exposure to interactions between
+                circadian regulation and environmental inputs, including nutrition.
               </p>
             </li>
             <li class="tl-item tl-item--active reveal">
               <span class="tl-badge">Active thesis</span>
-              <span class="tl-when"
-                >2025–present · DREAM Lab, IISER Thiruvananthapuram · Dr. Jishy
-                Varghese</span
-              >
+              <span class="tl-when">January 2026–present · DREAM Lab, IISER Thiruvananthapuram · Dr. Jishy Varghese</span>
               <p class="tl-what">
-                Master’s thesis: Hypoxia signalling, metabolism and nutritional
-                homeostasis in <em>Drosophila</em>.
+                Master’s thesis: Deciphering the role of hypoxia signalling in growth, development
+                and nutritional homeostasis in <em>Drosophila melanogaster</em>.
               </p>
             </li>
           </ol>
@@ -1782,58 +1696,50 @@
       <!-- ================= TECHNIQUES ================= -->
       <section class="band band--dark" id="lab">
         <div class="wrap">
-          <p class="sec-tag">Techniques</p>
+          <p class="sec-tag">Repertoire</p>
 
           <div class="lab-head reveal">
             <h2 class="h2" style="color: #fff">In the lab</h2>
             <p class="dim">
-              Experimental repertoire across physiological, genetic and
-              molecular domains.
+              Experimental repertoire across physiological, genetic, and molecular domains.
             </p>
           </div>
 
           <div class="card-grid">
-            <article class="card card--wide reveal">
-              <h3 class="card__head">Organismal physiology</h3>
+            <article class="card reveal">
+              <h3 class="card__head"><em>Drosophila</em> and Physiological Assays</h3>
               <p>
-                <em>Drosophila</em> maintenance · Genetic crosses · Larval
-                staging · Tissue dissection (ovary, brain) · CAFE feeding assay
-                (Orange G) · TAG lipid quantification · Starvation survival ·
-                Activity monitoring · Hypoxia exposure · Body weight
+                <em>Drosophila melanogaster</em> handling and maintenance · Larval
+                synchronisation and developmental staging · Tissue dissection
+                (ovary, brain) · Feeding assays · Starvation and survival assays ·
+                Activity monitoring · Genetic perturbation (RNAi, GeneSwitch,
+                overexpression)
               </p>
             </article>
 
             <article class="card reveal">
-              <h3 class="card__head">Functional genetics</h3>
+              <h3 class="card__head">Molecular Biology and Biochemistry</h3>
               <p>
-                RNAi · GeneSwitch · GAL4/UAS targeting · Tissue-specific
-                overexpression and knockdown · Temperature-sensitive GAL80<sup
-                  >ts</sup
-                >
+                RNA extraction and cDNA synthesis · DNA extraction and plasmid
+                isolation · PCR · Gel electrophoresis · qPCR · Basic
+                chromatography · Bacterial culture · Antimicrobial susceptibility
+                assays
               </p>
             </article>
 
             <article class="card reveal">
-              <h3 class="card__head">Molecular biology</h3>
+              <h3 class="card__head">Microscopy and Imaging</h3>
               <p>
-                RNA/DNA extraction · cDNA synthesis · PCR and gel
-                electrophoresis · RT-qPCR · Bacterial culture · Chromatography
+                Confocal microscopy · Fluorescence imaging · Sample preparation ·
+                Basic image analysis
               </p>
             </article>
 
             <article class="card reveal">
-              <h3 class="card__head">Microscopy &amp; imaging</h3>
+              <h3 class="card__head">Cellular and Data Analysis</h3>
               <p>
-                Confocal laser scanning · Epifluorescence · Specimen preparation
-                · ImageJ / FIJI
-              </p>
-            </article>
-
-            <article class="card reveal">
-              <h3 class="card__head">Cellular &amp; quantitative</h3>
-              <p>
-                Flow cytometry preparation and analysis · Survival analysis ·
-                Physiological data modelling · Python
+                Flow cytometry sample preparation and basic analysis · Python
+                (basic data analysis and visualisation)
               </p>
             </article>
           </div>
@@ -1876,7 +1782,7 @@
       <!-- ================= OPPORTUNITIES ================= -->
       <section class="band band--ivory" id="opportunities">
         <div class="wrap">
-          <p class="sec-tag">Looking ahead</p>
+          <p class="sec-tag">Prospective</p>
 
           <div class="opp reveal">
             <h2 class="h2">Research opportunities</h2>
@@ -1975,7 +1881,7 @@
                     d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
                   />
                 </svg>
-                <span>+91 85117 87003</span>
+                <span>+91 8511787003</span>
               </a>
             </div>
           </div>
@@ -2006,7 +1912,7 @@
 
           <div class="footer-links">
             <a href="Tithi_Kotasthane_CV.pdf" target="_blank" rel="noopener"
-              >Curriculum vitae ↗</a
+              >CV ↗</a
             >
           </div>
 
